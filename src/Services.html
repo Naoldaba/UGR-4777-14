@@ -3,64 +3,66 @@
     <head>
         <title>Services</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/styles.css">
         <link rel="stylesheet" href="./icons/fontawesome-free-6.4.2-web/css/all.css">
-        <link rel=stylesheet href="./css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header>
+        <header class="header">
             <div class="logo">
-                <span>ND</span>
+                <span class="logo__text">ND</span>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="./Home.html">Home</a></li>
-                    <li><a href="./AboutMe.html">About</a></li>
-                    <li><a href="./Projects.html">Projects</a></li>
-                    <li><a href="./Services.html">Services</a></li>
-                    <li><a href="./ContactMe.html">Contact</a></li>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="./Home.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="./AboutMe.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="./Projects.html" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="./Services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="./ContactMe.html" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
-            <div class="nav-toggler"><i class="fas fa-bars"></i></div>
-            <div id="nav-drop"></div>
+            <div class="nav-toggler">
+                <i class="nav-toggler__icon fas fa-bars"></i>
+            </div>
+            <div class="nav-drop" ></div>
         </header>
-        <main>
-            <div id="services-main">
-                <section  id="section-1">
+        <main class="main">
+            <div class="services-main">
+                <section class="service-intro-section">
                     <div>
-                        <h1>Services</h1>
-                        <div class="underline"></div>
-                        <p>Welcome to my Software Engineer Services
+                        <h1 class="service-intro-section__title">Services</h1>
+                        <div class="underline service-intro-section__underline"></div>
+                        <p class="service-intro-section__description">Welcome to my Software Engineer Services
                             page, where I offer a range of expertise
                             to meet your software development needs.
                             With a wealth of experience in the
                             industry, I'm well-equipped to deliver
                             tailored solutions for a variety of
                             projects. Here are the services I provide:</p>
-                        <a href="./ContactMe.html" class="button-link">Contact Me</a>
+                        <a href="./ContactMe.html" class="button-link service-section__button">Contact Me</a>
                     </div>
                 </section>
-                <section id="section-2">
+                <section id="section-2" class="service-list-section">
                     <div>
                         <div class="services">
-                            <div>
-                                <h3>Full Stack development</h3>
-                                <p>With proficiency in both frontend
-                                     and backend technologies, I offer
-                                     end-to-end development services.
-                                     This includes designing intuitive
-                                     user interfaces, building robust
-                                     backend systems, and integrating
-                                     databases and third-party APIs.</p>
+                            <div class="service">
+                                <h3 class="service__title">Full Stack development</h3>
+                                <p class="service__description">With proficiency in both frontend
+                                    and backend technologies, I offer
+                                    end-to-end development services.
+                                    This includes designing intuitive
+                                    user interfaces, building robust
+                                    backend systems, and integrating
+                                    databases and third-party APIs.</p>
                             </div>
-                            <video src="./videos/production_id_4974884(1080p).mp4" loop autoplay></video>
+                            <video src="./videos/production_id_4974884(1080p).mp4" loop autoplay class="service__video"></video>
                         </div>
 
                         <div class="services">
                             <video src="./videos/codes_-_23355(720p).mp4" loop autoplay></video>
-                            <div>
-                                <h3>Application Optimization</h3>
-                                <p>Is your existing application experiencing
+                            <div class="service">
+                                <h3 class="service__title">Application Optimization</h3>
+                                <p class="service__description">Is your existing application experiencing
                                     performance bottlenecks? I specialize
                                     in optimizing code and architecture to
                                     enhance speed, responsiveness, and overall
@@ -69,9 +71,9 @@
                         </div>
 
                         <div class="services">
-                            <div>
-                                <h3>Code Reviews and QA</h3>
-                                <p>Thorough code reviews are crucial for
+                            <div class="service">
+                                <h3 class="service__title">Code Reviews and QA</h3>
+                                <p class="service__description">Thorough code reviews are crucial for
                                     identifying potential issues and ensuring
                                     the highest quality standards. I provide
                                     comprehensive code reviews, offering
@@ -84,9 +86,9 @@
 
                         <div class="services">
                             <video src="./videos/laptop_-_1657(720p).mp4" loop autoplay></video>
-                            <div>
-                                <h3>Maintenance and Support</h3>
-                                <p>Once your software is deployed, I offer
+                            <div class="service">
+                                <h3 class="service__title">Maintenance and Support</h3>
+                                <p class="service__description">Once your software is deployed, I offer
                                     ongoing maintenance and support services
                                     to ensure it remains up-to-date, secure,
                                     and functional. This includes troubleshooting,
@@ -96,10 +98,10 @@
                         </div>
 
                     </div>
-                    <div id="service-price">
-                        <div id="price-table">
-                            <h2>Services and Pricing</h2>
-                            <table>
+                    <div class="service-price">
+                        <div class="price-table">
+                            <h2 class="price-table__title">Services and Pricing</h2>
+                            <table class="price-table__table">
                                 <tr>
                                     <th>Service</th>
                                     <th>Description</th>
@@ -133,16 +135,16 @@
                             </table>
                         </div>
 
-                        <article>
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            <h2 id="call">&nbsp;Let's Get Started</h2>
-                            <p>If you're interested in any of the services
+                        <article class="call-to-action">
+                            <i class="fa-solid fa-thumbs-up call-to-action__icon"></i>
+                            <h2 class="call-to-action__title">&nbsp;Let's Get Started</h2>
+                            <p class="call-to-action__description">If you're interested in any of the services
                                 listed above or have a unique project
                                 in mind, feel free to reach out to me at
-                                <span style="color:red;">nahafile@gmail.com</span>. I'm excited to discuss how I
+                                <span style="color:red;" class="call-to-action__email">nahafile@gmail.com</span>. I'm excited to discuss how I
                                     can help bring your software development
                                     goals to fruition.</p>
-                            <p>Thank you for considering me as your
+                            <p class="call-to-action__thank-you">Thank you for considering me as your
                                 trusted software engineering partner!</p>
                         </article>
 
@@ -152,32 +154,32 @@
             </div>
 
         </main>
-        <footer>
-            <div id="add-info">
+        <footer class="footer">
+            <div class="additional-info">
                 <div class="address">
-                  <h2>Address</h2>
-                  <address>
-                      <p>Ethiopia, Addis Ababa</p>
-                      <p>5kilo kingGeorge VI Street</p>
-                      <p>Email: nahafile@gmail.com</p>
-                      <p>phone: +251 920 375 653</p>
-                  </address>
+                    <h2 class="address__title">Address</h2>
+                    <address class="address__details">
+                        <p>Ethiopia, Addis Ababa</p>
+                        <p>5kilo kingGeorge VI Street</p>
+                        <p>Email: nahafile@gmail.com</p>
+                        <p>phone: +251 920 375 653</p>
+                    </address>
                 </div>
 
-                <div id="social">
-                    <h2>Social media</h2>
-                    <div>
-                      <a href="https://www.linkedin.com/in/naol-daba-1b42b4258?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BL%2BAJLt7nSaGwTQKpt70LCA%3D%3D" target="_blank"><i class="linkedin fa-brands fa-linkedin"></i></a>
-                      <a href="https://github.com/Naoldaba" target="_blank"><i class="github fa-brands fa-github"></i></a>
-                      <a href="#"><i class="facebook fa-brands fa-facebook-f"></i></a>
-                      <a href="#"><i class="twitter fa-brands fa-x-twitter"></i></a>
-                      <a href="#"><i class="youtube fa-brands fa-youtube"></i></a>
+                <div class="footer-social">
+                    <h2 class="footer-social__title">Social media</h2>
+                    <div class="footer-social__icons">
+                        <a href="https://www.linkedin.com/in/naol-daba-1b42b4258?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BL%2BAJLt7nSaGwTQKpt70LCA%3D%3D" target="_blank" class="footer-social__link"><i class="linkedin footer-social__icon fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Naoldaba" target="_blank" class="footer-social__link"><i class="github footer-social__icon fa-brands fa-github"></i></a>
+                        <a href="#" class="footer-social__link"><i class="facebook footer-social__icon fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social__link"><i class="twitter footer-social__icon fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="footer-social__link"><i class="youtube footer-social__icon fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
 
             </div>
-            <div id="copyright">
-                <span> &copy; Copyright 2023. Made by <a>Naol Daba</a></span>
+            <div class="copyright">
+                <span class="copyright__text">&copy; Copyright 2023. Made by <a class="copyright__author">Naol Daba</a></span>
             </div>
         </footer>
     </body>

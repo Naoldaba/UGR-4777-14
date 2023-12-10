@@ -3,32 +3,34 @@
     <head>
         <title>Portfolio</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/styles.css">
         <link rel="stylesheet" href="./icons/fontawesome-free-6.4.2-web/css/all.css">
-        <link rel=stylesheet href="./css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
     <body>
-        <header>
+        <header class="header">
             <div class="logo">
-                <span>ND</span>
+                <span class="logo__text">ND</span>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="./Home.html">Home</a></li>
-                    <li><a href="./AboutMe.html">About</a></li>
-                    <li><a href="./Projects.html">Projects</a></li>
-                    <li><a href="./Services.html">Services</a></li>
-                    <li><a href="./ContactMe.html">Contact</a></li>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="./Home.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="./AboutMe.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="./Projects.html" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="./Services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="./ContactMe.html" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
-            <div class="nav-toggler"><i class="fas fa-bars"></i></div>
-            <div id="nav-drop"></div>
+            <div class="nav-toggler">
+                <i class="nav-toggler__icon fas fa-bars"></i>
+            </div>
+            <div class="nav-drop" ></div>
         </header>
         <main>
-            <div id="projects-main">
-                <section id="abronet">
-                    <div class="sections">
+            <div class="projects-main">
+                <section class="abronet">
+                    <div class="project__sections">
                         <img src="./images/AbronetPc.png" alt="Abronet.org landing-page">
                         <div class="description">
                             <h2>Project Overview</h2>
@@ -68,8 +70,8 @@
 
                     </div>
                 </section>
-                <section class="ESSTI break" id="essti">
-                    <div class="sections">
+                <section class="essti break" >
+                    <div class="project__sections">
                         <img src="./images/EsstiPc.png" alt="Essti landing page">
                         <div class="description">
                             <h2>Project Overview</h2>
@@ -108,8 +110,8 @@
                     </div>
 
                 </section>
-                <section class="ETwood break" id="etwood">
-                    <div class="sections">
+                <section class="etwood break">
+                    <div class="project__sections">
                         <img src="./images/ET-pc.png" alt="ETwood landing page">
                         <div class="description">
                             <h2>Project Overview</h2>
@@ -164,32 +166,32 @@
             </div>
 
         </main>
-        <footer>
-            <div id="add-info">
+        <footer class="footer">
+            <div id="add-info" class="additional-info">
                 <div class="address">
-                  <h2>Address</h2>
-                  <address>
-                      <p>Ethiopia, Addis Ababa</p>
-                      <p>5kilo kingGeorge VI Street</p>
-                      <p>Email: nahafile@gmail.com</p>
-                      <p>phone: +251 920 375 653</p>
-                  </address>
+                    <h2 class="address__title">Address</h2>
+                    <address class="address__details">
+                        <p>Ethiopia, Addis Ababa</p>
+                        <p>5kilo kingGeorge VI Street</p>
+                        <p>Email: nahafile@gmail.com</p>
+                        <p>phone: +251 920 375 653</p>
+                    </address>
                 </div>
 
-                <div id="social">
-                    <h2>Social media</h2>
-                    <div>
-                      <a href="https://www.linkedin.com/in/naol-daba-1b42b4258?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BL%2BAJLt7nSaGwTQKpt70LCA%3D%3D" target="_blank"><i class="linkedin fa-brands fa-linkedin"></i></a>
-                      <a href="https://github.com/Naoldaba" target="_blank"><i class="github fa-brands fa-github"></i></a>
-                      <a href="#"><i class="facebook fa-brands fa-facebook-f"></i></a>
-                      <a href="#"><i class="twitter fa-brands fa-x-twitter"></i></a>
-                      <a href="#"><i class="youtube fa-brands fa-youtube"></i></a>
+                <div class="footer-social">
+                    <h2 class="footer-social__title">Social media</h2>
+                    <div class="footer-social__icons">
+                        <a href="https://www.linkedin.com/in/naol-daba-1b42b4258?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BL%2BAJLt7nSaGwTQKpt70LCA%3D%3D" target="_blank" class="footer-social__link"><i class="linkedin footer-social__icon fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Naoldaba" target="_blank" class="footer-social__link"><i class="github footer-social__icon fa-brands fa-github"></i></a>
+                        <a href="#" class="footer-social__link"><i class="facebook footer-social__icon fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social__link"><i class="twitter footer-social__icon fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="footer-social__link"><i class="youtube footer-social__icon fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
 
             </div>
-            <div id="copyright">
-                <span> &copy; Copyright 2023. Made by <a>Naol Daba</a></span>
+            <div class="copyright">
+                <span class="copyright__text">&copy; Copyright 2023. Made by <a class="copyright__author">Naol Daba</a></span>
             </div>
         </footer>
     </body>
