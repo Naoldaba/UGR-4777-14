@@ -79,6 +79,28 @@ body{
 
 .nav-drop{
     display: none;
+    position: absolute;
+    left:0;
+    top: 80px;
+    width: 90%;
+    z-index: 10;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: -1px 1px 5px 0px;
+    background: transparent;
+    backdrop-filter: blur(25px);
+}
+
+.nav-drop li{
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-drop li a{
+    color: black;
 }
 
 a{
@@ -97,7 +119,6 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .hero__content{
@@ -110,6 +131,7 @@ a{
     font-size: 1.5rem;
 
 }
+
 .quote{
     width: 70%;
     margin: 20px auto;
@@ -647,7 +669,7 @@ button{
     }
 }
 
-/* For Laptop Computer */
+/* For Laptop Computer and bigger screens*/
 @media (min-width: 768px){
     .home-main{
         overflow-x: hidden;
@@ -700,5 +722,19 @@ button{
     }
     td{
         font-size: 1rem;
+    }
+    .hiddenx{
+        opacity:0;
+        transform: translateX(-300px);
+        transition: all 3s;
+    }
+    .hiddeny{
+        opacity:0;
+        transform: translateX(400px);
+        transition: all 3s;
+    }
+    .show{
+        transform: translateX(0);
+        opacity:1;
     }
 }
